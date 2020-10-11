@@ -15,19 +15,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">{{ navLinkClients }}</a>
+          <a class="nav-link" href="#">Clientes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">{{ navLinkDocumental }}</a>
+          <a class="nav-link" href="#">Documental</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">{{ navLinkPlaces }}</a>
+          <a class="nav-link" href="#">Lugares</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">{{ navLinkPrints }}</a>
+          <a class="nav-link" href="#">Prints}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">{{ navLinkAbout }}</a>
+          <a class="nav-link" href="#">About</a>
         </li>
       </ul>
     </div>
@@ -38,19 +38,7 @@
 import { Options, Vue } from "vue-class-component";
 
 @Options({
-  props: {
-    navLinkClients: String,
-    navLinkDocumental: String,
-    navLinkPlaces: String,
-    navLinkPrints: String,
-    navLinkAbout: String
-  }
+  props: {}
 })
-export default class Header extends Vue {
-  navLinkClients: string;
-  navLinkDocumental: string;
-  navLinkPlaces: string;
-  navLinkPrints: string;
-  navLinkAbout: string;
-}
+export default class Header extends Vue {}
 </script>
