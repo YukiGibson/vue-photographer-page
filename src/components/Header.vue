@@ -2,18 +2,18 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Raquel Rovira</a>
     <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav navbar-expand-lg">
         <li class="nav-item active">
           <a class="nav-link" href="#">Clientes</a>
         </li>
@@ -24,7 +24,7 @@
           <a class="nav-link" href="#">Lugares</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Prints}</a>
+          <a class="nav-link" href="#">Prints</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
@@ -35,10 +35,9 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
+  import Vue from "vue";
 
-@Options({
-  props: {}
-})
-export default class Header extends Vue {}
+  export default Vue.extend({
+    name: 'Header'
+  })
 </script>

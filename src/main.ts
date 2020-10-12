@@ -1,10 +1,17 @@
-import { createApp } from "vue";
-import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+import Vue from "vue";
+import {BootstrapVue, IconsPlugin} from "bootstrap-vue";
 import App from "./App.vue";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
 
-createApp(App).mount("#app");
+Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 
-createApp.use(BootstrapVue);
-createApp.use(IconsPlugin);
+const vm = new Vue({
+  el: `#app`,
+  data: {
+    title: "Raquel Rovira Photography"
+  },
+  components: {
+    App
+  },
+  render: h => h(App)
+});

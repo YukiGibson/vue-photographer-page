@@ -1,47 +1,51 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Header />
+  <div>
+    <Header></Header>
+  </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
-import Header from "./components/Header.vue";
+  import Vue from "vue";
+  import Header from "./components/Header.vue";
+  import "bootstrap/dist/css/bootstrap.css";
+  import "bootstrap-vue/dist/bootstrap-vue.css";
 
-@Options({
-  components: {
-    Header,
-    HelloWorld
-  }
-})
-export default class App extends Vue {}
+  export default Vue.extend({
+    name: 'App',
+
+    components: {
+      Header
+    }
+  })
+
 </script>
 
 <style>
-$font-dir: "/fonts/";
+  @font-face {
+    font-family: "Louis George Cafe";
+    src: url("../public/fonts/Louis George Cafe.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: "Louis George Cafe";
-  src: url("#{$font-dir}Louis George Cafe.ttf") .format("truetype");
-  font-weight: "normal";
-  font-style: "normal";
-}
-@font-face {
-  font-family: "Louis George Cafe";
-  src: url("#{$font-dir}Louis George Cafe Bold.ttf") .format("truetype");
-  font-weight: "bold";
-  font-style: "normal";
-}
-@font-face {
-  font-family: "Louis George Cafe";
-  src: url("#{$font-dir}Louis George Cafe Italic.ttf") .format("truetype");
-  font-weight: "normal";
-  font-style: "italic";
-}
-@font-face {
-  font-family: "Louis George Cafe";
-  src: url("#{$font-dir}Louis George Cafe Bold Italic.tff");
-  font-weight: "bold";
-  font-style: "italic";
-}
+  @font-face {
+    font-family: "Louis George Cafe";
+    src: url("../public/fonts/Louis George Cafe Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Louis George Cafe";
+    src: url("../public/fonts/Louis George Cafe Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Louis George Cafe";
+    src: url("../public/fonts/Louis George Cafe Bold Italic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+  }
 </style>
