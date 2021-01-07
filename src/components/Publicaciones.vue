@@ -1,34 +1,45 @@
 <template>
-  <b-row>
+  <b-row class="page-image">
     <b-col>
-      <a href="lleve-feria">
-        <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=58" alt="Image 2"></b-img>
+      <a href="https://bubblegummag.com/2020/11/06/kilig-or-the-flying-butterflies-inside-my-tumy/">
+        <b-img
+          thumbnail
+          fluid
+          :src="require('@/assets/images/publicaciones/kilig_bubblegummag.jpg')"
+          alt="Kilig"
+        ></b-img>
       </a>
-
-      <p>Mi Trópico - Bubble Gum Magazine</p>
+      <figcaption class="figure-caption text-center">Kilig - Bubble Gum Magazine</figcaption>
     </b-col>
     <b-col>
-      <a href="mi-tropico">
-        <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Image 3"></b-img>
+      <a href="https://bubblegummag.com/2020/10/12/mi-tropico//">
+        <b-img
+          thumbnail
+          fluid
+          :src="require('@/assets/images/publicaciones/mi_tropico_bubblegummag.jpg')"
+          alt="Mi Tropico"
+        ></b-img>
       </a>
-      <p>Kilig - Bubble Gum Magazine</p>
+      <figcaption class="figure-caption text-center">Mi Trópico - Bubble Gum Magazine</figcaption>
     </b-col>
     <b-col>
-      <a href="kilig">
-        <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+      <a href="https://www.instagram.com/p/CGa3sqbH9aA/">
+        <b-img
+          thumbnail
+          fluid
+          :src="require('@/assets/images/publicaciones/covid19_ulatina.jpg')"
+          alt="Ulatina"
+        ></b-img>
       </a>
-
-      <p>Ulatina</p>
+      <figcaption class="figure-caption text-center">Ulatina</figcaption>
     </b-col>
   </b-row>
 </template>
 
 <script>
-  export default {
-    name: "Publicaciones.vue"
-  }
+export default {
+  name: 'Publicaciones.vue',
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

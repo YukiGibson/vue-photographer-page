@@ -1,25 +1,33 @@
 <template>
   <div>
-    <b-row>
+    <b-row class="page-image">
       <b-col>
-        <a href="lleve-feria">
-          <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=58" alt="Image 2"></b-img>
+        <a href="/estilo-de-vida/conciertos">
+          <b-img
+            thumbnail
+            fluid
+            :src="require('@/assets/images/lifestyle/conciertos_portada.jpg')"
+            alt="conciertos"
+          ></b-img>
         </a>
-
-        <p>Retratos</p>
+        <figcaption class="figure-caption text-center">Conciertos</figcaption>
       </b-col>
       <b-col>
-        <a href="mi-tropico">
-          <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Image 3"></b-img>
+        <a href="/estilo-de-vida/estilo-de-vida">
+          <b-img
+            thumbnail
+            fluid
+            :src="require('@/assets/images/lifestyle/estilo_de_vida_portada.jpg')"
+            alt="estilo de vida"
+          ></b-img>
         </a>
-        <p>Parejas</p>
+        <figcaption class="figure-caption text-center">Estilo de Vida</figcaption>
       </b-col>
       <b-col>
-        <a href="kilig">
-          <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+        <a href="/estilo-de-vida/parejas">
+          <b-img thumbnail fluid :src="require('@/assets/images/lifestyle/parejas_portada.jpg')" alt="parejas"></b-img>
         </a>
-
-        <p>Conciertos</p>
+        <figcaption class="figure-caption text-center">Parejas</figcaption>
       </b-col>
     </b-row>
   </div>

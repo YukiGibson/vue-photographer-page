@@ -1,10 +1,10 @@
 <template>
   <header class="container">
-    <b-navbar toggleable>
-      <b-navbar-brand href="/">
-        <b-img v-bind="logo" :src="require('@/assets/LogoRaquelnegro.png')" alt="Raquel Rovira"></b-img>
+    <b-navbar toggleable style="padding: 10px">
+      <b-navbar-brand href="/" class="brand">
+        <b-img class="logo" :src="require('@/assets/LogoRaquelnegro.png')" alt="Raquel Rovira"></b-img>
       </b-navbar-brand>
-      <b-navbar-toggle target="navbar-toggle-collapse">
+      <b-navbar-toggle target="navbar-toggle-collapse" class="p-3 my-3 shadow toggle">
         <template #default="{ expanded }">
           <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
           <b-icon v-else icon="chevron-bar-down"></b-icon>
@@ -30,10 +30,11 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'Header',
-  data() {
-    return {
-      logo: {width: 400, height: 100},
-    };
-  },
 });
 </script>
+
+<style scoped>
+.logo {
+  width: 90%;
+}
+</style>

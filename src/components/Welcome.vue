@@ -1,19 +1,24 @@
 <template>
   <div>
-    <div class="border-top my-3"></div>
     <div>
-      <b-row>
+      <b-row class="page-image">
         <b-col>
-          <b-img thumbnail fluid :src="require('@/assets/images/lifestyle/ls1.jpg')" alt="1"></b-img>
-          <p>Documental</p>
+          <a href="/documental">
+            <b-img thumbnail fluid :src="require('@/assets/documental_portada.jpg')" alt="1"></b-img>
+          </a>
+          <figcaption class="figure-caption text-center">Documental</figcaption>
         </b-col>
         <b-col>
-          <b-img thumbnail fluid :src="require('@/assets/images/clients/cl1.jpg')" alt="1"></b-img>
-          <p>Estilo de vida</p>
+          <a href="/estilo-de-vida">
+            <b-img thumbnail fluid :src="require('@/assets/estilo_de_vida_portada.jpg')" alt="1"></b-img>
+          </a>
+          <figcaption class="figure-caption text-center">Estilo de vida</figcaption>
         </b-col>
         <b-col>
-          <b-img thumbnail fluid :src="require('@/assets/images/places/plcs1.jpg')" alt="1"></b-img>
-          <p>Clientes</p>
+          <a href="/clientes">
+            <b-img thumbnail fluid :src="require('@/assets/cliente_portada.jpg')" alt="1"></b-img>
+          </a>
+          <figcaption class="figure-caption text-center">Clientes</figcaption>
         </b-col>
       </b-row>
       <br />
@@ -29,3 +34,7 @@ export default Vue.extend({
   name: 'Welcome',
 });
 </script>
+
+<style scoped>
+
+</style>

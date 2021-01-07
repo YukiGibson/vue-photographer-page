@@ -28,7 +28,7 @@ export default Vue.extend({
 
 <style>
 body {
-  padding-top: 200px;
+  padding-top: 1%;
 }
 
 @font-face {
@@ -63,5 +63,68 @@ body {
   min-height: 300px;
   min-width: 300px;
   margin-right: 5px;
+}
+
+.image-shadow {
+  -moz-box-shadow: 0 0 5px lightblue;
+  -webkit-box-shadow: 0 0 5px lightblue;
+  box-shadow: 0 0 5px lightblue;
+}
+
+.card {
+  border: none;
+}
+
+.documentary-image {
+  padding-top: 0.5rem;
+}
+
+img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+b-col {
+  object-fit: scale-down;
+}
+
+@media screen and (max-width: 800px) {
+  .page-image {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+
+  .card {
+    background: none !important;
+    border: none !important;
+  }
+
+  .documentary-image {
+    height: 400px;
+  }
+
+  box-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .brand {
+    margin-left: 16px;
+  }
+
+  .logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .toggle {
+    display: block; margin-right: auto; margin-left: auto
+  }
+
+  figcaption {
+    margin: 10px;
+  }
 }
 </style>

@@ -1,36 +1,54 @@
 <template>
-  <b-row>
+  <b-row class="page-image">
     <b-col>
-      <a href="kilig">
-        <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+      <a href="/clientes/marce-barrito">
+        <b-img
+          thumbnail
+          fluid
+          :src="require('@/assets/images/clients/barrito_portada.jpg')"
+          alt="marce barrito"
+        ></b-img>
       </a>
-
-      <p>Marce Barrito</p>
+      <figcaption class="figure-caption text-center">Marce&nbsp;Barrito</figcaption>
     </b-col>
     <b-col>
-      <a href="mi-tropico">
-        <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Image 3"></b-img>
+      <a href="/clientes/morfo">
+        <b-img thumbnail fluid :src="require('@/assets/images/clients/morfo_portada.jpg')" alt="morfo"></b-img>
       </a>
-      <p>Morfo</p>
+      <figcaption class="figure-caption text-center">Morfo</figcaption>
     </b-col>
     <b-col>
-      <a href="lleve-feria">
-        <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=58" alt="Image 2"></b-img>
+      <a href="/clientes/nina-botanica">
+        <b-img
+          thumbnail
+          fluid
+          :src="require('@/assets/images/clients/botanica_portada.jpg')"
+          alt="niña botanica"
+        ></b-img>
       </a>
-
-      <p>Niña Botánica</p>
+      <figcaption class="figure-caption text-center">Niña&nbsp;Botánica</figcaption>
     </b-col>
     <b-col>
-      <a href="mi-tropico">
-        <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Image 3"></b-img>
+      <a href="/clientes/ariana-castillo">
+        <b-img
+          thumbnail
+          fluid
+          :src="require('@/assets/images/clients/ariana_castillo_portada.jpg')"
+          alt="ariana castillo"
+        ></b-img>
       </a>
-      <p>Ariana Castillo Joyería</p>
+      <figcaption class="figure-caption text-center">Ariana&nbsp;Castillo&nbsp;Joyería</figcaption>
     </b-col>
     <b-col>
-      <a href="mi-tropico">
-        <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Image 3"></b-img>
+      <a href="/clientes/tarotist">
+        <b-img
+          thumbnail
+          fluid
+          :src="require('@/assets/images/clients/tarotist_portada.jpg')"
+          alt="your local tarotist"
+        ></b-img>
       </a>
-      <p>Your Local Tarotist</p>
+      <figcaption class="figure-caption text-center">Your&nbsp;Local&nbsp;Tarotist</figcaption>
     </b-col>
   </b-row>
 </template>
