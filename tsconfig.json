@@ -7,7 +7,8 @@
     "importHelpers": true,
     "importsNotUsedAsValues": "error",
     "jsx": "preserve",
-    "module": "esnext",
+    "lib": ["ES2019"],
+    "module": "es2015",
     "moduleResolution": "node",
     "rootDir": "src",
     "skipLibCheck": true,
@@ -16,10 +17,12 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "sourceMap": true,
-    "target": "ES2019",
+    "target": "es5",
     "types": [
+      "node",
       "webpack-env"
     ],
+    "outDir": "build",
     "paths": {
       "@/*": [
         "src/*"
@@ -37,7 +40,8 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+    "node_modules/@types/node/globals.d.ts"
   ],
   "exclude": [
     "node_modules"
