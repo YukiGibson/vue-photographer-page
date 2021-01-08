@@ -40,6 +40,7 @@ export function getTarotistImages(): string[] {
 
 export function getArianaJoyeriaImages(): string[] {
   const context = require.context('./assets/images/clients/ariana_joyeria', false, /(?:jpg|gif|png)/);
+  console.log(context.keys());
   return getImages(context);
 }
 
