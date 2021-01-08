@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {getTropicoImages} from '../../utils';
+import {loadImages} from '../../utils';
 
 export default Vue.extend({
   name: 'MiTropico',
   data: function() {
     return {
-      files: getTropicoImages(),
+      files: loadImages('./assets/images/documental/mi_tropico'),
     };
   },
 });

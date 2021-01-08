@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {getKiligImages} from '../../utils';
+import {loadImages} from '../../utils';
 
 export default Vue.extend({
   name: 'Kilig',
   data: function() {
     return {
-      files: getKiligImages(),
+      files: loadImages('./assets/images/documental/kilig'),
     };
   },
 });

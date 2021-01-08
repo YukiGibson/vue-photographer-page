@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {getMorfoImages} from '../../utils';
+import {loadImages} from '../../utils';
 
 export default Vue.extend ({
   name: "Morfo",
   data: function() {
     return {
-      files: getMorfoImages(),
+      files: loadImages('./assets/images/clients/morfo'),
     };
   },
 })

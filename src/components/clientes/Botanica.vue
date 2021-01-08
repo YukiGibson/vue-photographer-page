@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {getBotanicaImages} from '../../utils';
+import {loadImages} from '../../utils';
 
 export default Vue.extend ({
   name: "NinaBotanica",
   data: function() {
     return {
-      files: getBotanicaImages(),
+      files: loadImages('./assets/images/clients/botanica'),
     };
   },
 })

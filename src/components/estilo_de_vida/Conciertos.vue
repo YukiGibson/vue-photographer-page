@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {getConciertosImages} from '@/utils';
+import {loadImages} from '@/utils';
 
 export default Vue.extend({
   name: 'Conciertos',
   data: function() {
     return {
-      files: getConciertosImages(),
+      files: loadImages('./assets/images/lifestyle/conciertos'),
     };
   },
 });

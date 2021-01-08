@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {getArianaJoyeriaImages} from '../../utils';
+import {loadImages} from '../../utils';
 
 export default Vue.extend ({
   name: "ArianaJoyeria",
   data: function() {
     return {
-      files: getArianaJoyeriaImages(),
+      files: loadImages('./assets/images/clients/ariana_joyeria'),
     };
   },
 })

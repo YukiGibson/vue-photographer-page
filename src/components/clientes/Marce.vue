@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {getMarceBarritoImages} from '../../utils';
+import {loadImages} from '../../utils';
 
 export default Vue.extend ({
   name: "MarceBarrito",
   data: function() {
     return {
-      files: getMarceBarritoImages(),
+      files: loadImages('./assets/images/clients/barrito'),
     };
   },
 })

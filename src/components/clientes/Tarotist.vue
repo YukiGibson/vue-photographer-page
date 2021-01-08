@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {getTarotistImages} from '../../utils';
+import {loadImages} from '../../utils';
 
 export default Vue.extend ({
   name: "Tarotist",
   data: function() {
     return {
-      files: getTarotistImages(),
+      files: loadImages('./assets/images/clients/tarotist'),
     };
   },
 })

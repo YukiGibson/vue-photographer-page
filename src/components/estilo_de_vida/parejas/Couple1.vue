@@ -12,13 +12,13 @@
 
 <script>
 import Vue from "vue";
-import {getFirstParejaImages} from '@/utils';
+import {loadImages} from '@/utils';
 
 export default Vue.extend({
   name: 'Couple1',
   data: function() {
     return {
-      files: getFirstParejaImages(),
+      files: loadImages('./assets/images/lifestyle/parejas/1_pareja'),
     };
   },
 });
