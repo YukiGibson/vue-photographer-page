@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp ~/Downloads/Portafolio/bxl* ~/Projects/github.com/vue-photographer-page/src/assets/icons/
+cp ~/Downloads/favicon_io/favicon.ico ~/Projects/github.com/vue-photographer-page/public/favicon2.ico

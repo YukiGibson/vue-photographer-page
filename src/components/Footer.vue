@@ -16,7 +16,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fab fa-facebook" href="https://www.facebook.com/raquelroviradiaz">
+          <a class="nav-link fab fa-facebook" href="https://www.facebook.com/raquelrovirafotografia">
             <box-icon name="facebook-square" type="logo">Facebook</box-icon>
           </a>
         </li>
