@@ -110,7 +110,7 @@ b-col {
     border: none !important;
   }
 
-  .documentary-image {
+  .documentary-image img {
     height: 400px;
   }
 
