@@ -229,4 +229,10 @@ const router = new Router({
   ],
 });
 
+router.afterEach((to) => {
+  Vue.nextTick(() => {
+    document.title = to.meta["title"]
+  })
+})
+
 export default router;
