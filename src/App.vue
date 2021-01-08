@@ -86,11 +86,14 @@ img {
   width: 100%;
 }
 
+.documentary-image img {
+  width: auto !important;
+}
+
 .card img {
   display: flex;
   align-items: flex-start;
 }
-
 
 b-col {
   object-fit: scale-down;
@@ -128,13 +131,13 @@ b-col {
   }
 
   .toggle {
-    display: block; margin-right: auto; margin-left: auto
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   figcaption {
     margin: 10px;
   }
-
-
 }
 </style>
