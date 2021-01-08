@@ -82,7 +82,15 @@ body {
 img {
   margin-top: auto;
   margin-bottom: auto;
+  height: auto;
+  width: 100%;
 }
+
+.card img {
+  display: flex;
+  align-items: flex-start;
+}
+
 
 b-col {
   object-fit: scale-down;
@@ -126,5 +134,7 @@ b-col {
   figcaption {
     margin: 10px;
   }
+
+
 }
 </style>

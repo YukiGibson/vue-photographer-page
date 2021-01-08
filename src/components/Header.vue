@@ -35,6 +35,7 @@ export default Vue.extend({
 
 <style scoped>
 .logo {
+  height: auto;
   width: 90%;
 }
 </style>

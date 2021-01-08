@@ -28,6 +28,7 @@ export default Vue.extend({
 
 <style scoped>
 img {
+  height: auto;
   width: 50%;
 }
 </style>
