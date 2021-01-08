@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {loadImages} from '../../utils';
+import {getLleveFeriaImages} from '@/utils';
 
 export default Vue.extend({
   name: 'LleveFeria',
   data: function() {
     return {
-      files: loadImages('./assets/images/documental/lleve_feria'),
+      files: getLleveFeriaImages(),
     };
   },
 });

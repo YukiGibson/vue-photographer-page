@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {loadImages} from '../../utils';
+import {getQECImages} from '@/utils';
 
 export default Vue.extend({
   name: 'QEC',
   data: function() {
     return {
-      files: loadImages('./assets/images/documental/quedate_en_casa'),
+      files: getQECImages(),
     };
   },
 });

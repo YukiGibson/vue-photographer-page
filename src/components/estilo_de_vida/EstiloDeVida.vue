@@ -12,13 +12,13 @@
 
 <script>
 import Vue from 'vue';
-import {loadImages} from '@/utils';
+import {getLifestyleImages} from '@/utils';
 
 export default Vue.extend({
   name: 'EstiloDeVida',
   data: function() {
     return {
-      files: loadImages('./assets/images/lifestyle/estilo_de_vida'),
+      files: getLifestyleImages(),
     };
   },
 });
