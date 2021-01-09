@@ -28,7 +28,7 @@
       </a>
       <figcaption class="figure-caption text-center">Niña&nbsp;Botánica</figcaption>
     </b-col>
-    <b-col>
+    <!--<b-col>
       <a href="/clientes/ariana-castillo">
         <b-img
           thumbnail
@@ -38,7 +38,7 @@
         ></b-img>
       </a>
       <figcaption class="figure-caption text-center">Ariana&nbsp;Castillo&nbsp;Joyería</figcaption>
-    </b-col>
+    </b-col> -->
     <b-col>
       <a href="/clientes/tarotist">
         <b-img
