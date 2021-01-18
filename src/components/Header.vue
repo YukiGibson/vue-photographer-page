@@ -2,7 +2,7 @@
   <header class="container">
     <b-navbar toggleable style="padding: 10px">
       <b-navbar-brand href="/" class="brand">
-        <b-img class="logo" :src="require('@/assets/LogoRaquelnegro.png')" alt="Raquel Rovira"></b-img>
+        <b-img class="logo" :src="require('@/assets/logoNegro.png')" alt="Raquel Rovira"></b-img>
       </b-navbar-brand>
       <b-navbar-toggle target="navbar-toggle-collapse" class="p-3 my-3 shadow toggle">
         <template #default="{ expanded }">
@@ -36,6 +36,6 @@ export default Vue.extend({
 <style scoped>
 .logo {
   height: auto;
-  width: 90%;
+  width: 50%;
 }
 </style>
